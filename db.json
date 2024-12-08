@@ -1,0 +1,60 @@
+{
+  "famille": [
+    { "idFamille": 1, "nom": "Famille Dupont", "date_de_creation": "2024-01-01" },
+    { "idFamille": 2, "nom": "Famille Martin", "date_de_creation": "2023-12-15" }
+  ],
+  "user": [
+    { "id": 1, "nom": "Dupont", "prenom": "Pierre", "email": "pierre.dupont@mail.com", "motDePasse": "motdepasse123", "profession": "Développeur", "numTel": "0123456789", "role": "Parent", "idFamille": 1 },
+    { "id": 2, "nom": "Dupont", "prenom": "Marie", "email": "marie.dupont@mail.com", "motDePasse": "motdepasse123", "profession": "Médecin", "numTel": "0123456789", "role": "Parent", "idFamille": 1 },
+    { "id": 3, "nom": "Martin", "prenom": "Paul", "email": "paul.martin@mail.com", "motDePasse": "motdepasse123", "profession": "Professeur", "numTel": "0987654321", "role": "Enfant", "idFamille": 2 }
+  ],
+  "taches": [
+    { "idTache": 1, "nom": "Faire les courses", "date_debut": "2024-11-01", "date_fin": "2024-11-05", "status": "En cours", "type": "Ménage", "description": "Acheter les provisions", "idUser": 1, "idFamille": 1 },
+    { "idTache": 2, "nom": "Préparer le dîner", "date_debut": "2024-11-01", "date_fin": "2024-11-01", "status": "Terminé", "type": "Cuisine", "description": "Préparer le repas du soir", "idUser": 2, "idFamille": 1 }
+  ],
+  "notification": [
+    { "idNotification": 1, "message": "Vous avez une nouvelle tâche à faire", "date_envoie": "2024-11-01T10:00:00", "isVue": false, "idUser": 1, "idTache": 1 },
+    { "idNotification": 2, "message": "La tâche 'Préparer le dîner' est terminée", "date_envoie": "2024-11-01T20:00:00", "isVue": true, "idUser": 2, "idTache": 2 }
+  ],
+  "chat": [
+    { "idChat": 1, "libelle": "Chat Famille Dupont" },
+    { "idChat": 2, "libelle": "Chat Famille Martin" }
+  ],
+  "message": [
+    { "idMessage": 1, "contenu": "Salut tout le monde !", "date_envoie": "2024-11-01T08:00:00", "isVue": true, "idUser": 1, "idChat": 1 },
+    { "idMessage": 2, "contenu": "Bonjour, comment ça va ?", "date_envoie": "2024-11-01T08:30:00", "isVue": false, "idUser": 2, "idChat": 1 }
+  ],
+  "recompense": [
+    { "idRecompense": 1, "coin": 100, "idUser": 1 },
+    { "idRecompense": 2, "coin": 50, "idUser": 2 }
+  ],
+  "token": [
+    { "id": 1, "token": "token_1_abcdef", "userId": 1 },
+    { "id": 2, "token": "token_2_ghijk", "userId": 2 }
+  ],
+  "faire": [
+    { "idUser": 1, "idTache": 1 },
+    { "idUser": 2, "idTache": 2 }
+  ],
+  "recevoir": [
+    { "idUser": 1, "idNotification": 1 },
+    { "idUser": 2, "idNotification": 2 }
+  ],
+  "envoyer": [
+    { "idUser": 1, "idMessage": 1 },
+    { "idUser": 2, "idMessage": 2 }
+  ],
+  "participer": [
+    { "idUser": 1, "idChat": 1, "date": "2024-11-01" },
+    { "idUser": 2, "idChat": 1, "date": "2024-11-01" }
+  ],
+  "lier": [
+    { "idUser": 1, "idFamille": 1 },
+    { "idUser": 2, "idFamille": 1 },
+    { "idUser": 3, "idFamille": 2 }
+  ],
+  "lier_recompense": [
+    { "idUser": 1, "idRecompense": 1 },
+    { "idUser": 2, "idRecompense": 2 }
+  ]
+}
