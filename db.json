@@ -4,9 +4,9 @@
     { "idFamille": 2, "nom": "Famille Martin", "date_de_creation": "2023-12-15" }
   ],
   "user": [
-    { "id": 1, "nom": "Dupont", "prenom": "Pierre", "email": "pierre.dupont@mail.com", "motDePasse": "motdepasse123", "profession": "Développeur", "numTel": "0123456789", "role": "Parent", "idFamille": 1 },
-    { "id": 2, "nom": "Dupont", "prenom": "Marie", "email": "marie.dupont@mail.com", "motDePasse": "motdepasse123", "profession": "Médecin", "numTel": "0123456789", "role": "Parent", "idFamille": 1 },
-    { "id": 3, "nom": "Martin", "prenom": "Paul", "email": "paul.martin@mail.com", "motDePasse": "motdepasse123", "profession": "Professeur", "numTel": "0987654321", "role": "Enfant", "idFamille": 2 }
+    { "id": 1, "nom": "Dupont", "prenom": "Pierre", "email": "pierre.dupont@mail.com", "motDePasse": "motdepasse123",  "role": "Parent", "idFamille": 1 },
+    { "id": 2, "nom": "Dupont", "prenom": "Marie", "email": "marie.dupont@mail.com", "motDePasse": "motdepasse123",  "role": "Parent", "idFamille": 1 },
+    { "id": 3, "nom": "Martin", "prenom": "Paul", "email": "paul.martin@mail.com", "motDePasse": "motdepasse123", "role": "Enfant", "idFamille": 2 }
   ],
   "taches": [
     { "idTache": 1, "nom": "Faire les courses", "date_debut": "2024-11-01", "date_fin": "2024-11-05", "status": "En cours", "type": "Ménage", "description": "Acheter les provisions", "idUser": 1, "idFamille": 1 },
